@@ -1,0 +1,10 @@
+^C:\USERS\KUNAL\GITHUB-CLASSROOM\CS442APP\MP3-KUNALRAJPUTCR7\BUILD\WINDOWS\X64\CMAKEFILES\D2AC85010C758E1EA12DEC9D816F1454\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
